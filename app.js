@@ -11,6 +11,8 @@ tag.src = 'https://www.youtube.com/iframe_api';
 let firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+alert
+
 function onYouTubeIframeAPIReady() {
   let src = `https://www.youtube.com/embed/${id}?enablejsapi=1&playsinline=1&autoplay=0&rel=0&modestbranding=1&version=3`;
   document.querySelector('#player').setAttribute('src', src);
